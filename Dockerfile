@@ -28,6 +28,7 @@ ADD start-kube-docker.sh /go/src/github.com/pachyderm/pachyderm/etc/kube/
 RUN chmod +x /go/src/github.com/pachyderm/pachyderm/etc/kube/start-kube-docker.sh
 RUN chmod +x /runpach.sh
 RUN chmod +x /bridge.sh
+EXPOSE 650
 EXPOSE 30650
 EXPOSE 8080
 CMD ["/runpach.sh"]
